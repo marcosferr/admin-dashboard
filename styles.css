@@ -1,0 +1,7 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+aside{
+    background-color: #0c4a6e;
+}
