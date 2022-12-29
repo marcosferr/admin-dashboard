@@ -1,7 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    font-family: 'Roboto',system-ui, arial;
+    font-weight: 700;
+    font-size: 1.25 rem;
+    grid-template-rows: 1fr 6fr;
+    background-color:#f0f9ff;
+   
+}
+#searchbar svg {
+    height: 30px;
+    width: 30px;
+}
+img {
+    
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+}
+header{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+}
+.container{
+    background-color: #0c4a6e;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;  
+}
+
+aside { 
+    color:#f0f9ff;
+    
+}
+.btn-group > svg {
+    width:  36px;
+    height: 36px;
+}
+.btn-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+}
+.btn-container{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
 }
 aside{
-    background-color: #0c4a6e;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 30px;
+}
+svg{
+    height: 10px;
+    width:10px;;
+}
+aside  svg {
+    margin-left: 30px;
+}
+button{
+ width: 150px;
+ background-color: #0369a1;
+ border: none 0px;
+ border-radius: 15px;
+ height: 40px;
+ color: #f0f9ff;
+}
+input {
+    background-color: #f0f9ff;
+    border: none 0px;
+ border-radius: 15px;
+ background-color: darkgray;
+}
+.profile-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 1fr 1fr;
+
+}
+.profile-section img {
+grid-row-start: 1;
+grid-row-end: 3;
+}
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: grey;
+}
+.section1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;  
+
+}
+.section2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+
+}
+.section3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+
+}
+.card {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    background-color: #f0f9ff;
+}
+.icn-group{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+.card-group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 15px;
 }
