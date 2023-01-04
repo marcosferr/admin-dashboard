@@ -13,6 +13,25 @@ body{
     height: 30px;
     width: 30px;
 }
+#searchbar {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+#profileUser{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
+    justify-content: center;
+}
+#profileUser svg{
+    height: 40px;
+    width: 40px;
+}
+#profileUser img {
+    height: 60px;
+    width: 60px;
+}
 img {
     
         border-radius: 50%;
@@ -33,7 +52,8 @@ main {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
-    grid-row-end: 3;  
+    grid-row-end: 3; 
+    padding: 30px 20px 10px 20px;
 }
 .container{
     background-color: #0c4a6e;
@@ -90,21 +110,22 @@ input {
  border-radius: 15px;
  background-color: darkgray;
 }
-.profile-section{
+.profile-section, .userSection{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+  
 
 }
 .profile-section img {
-grid-row-start: 1;
-grid-row-end: 3;
+    justify-self:center ;
 }
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: grey;
+    gap: 20px;
 }
 .section1 {
     grid-column-start: 1;
@@ -131,14 +152,38 @@ main {
     display: grid;
     grid-template-rows: 1fr 3fr 1fr;
     background-color: #f0f9ff;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+}
+.card div svg {
+    align-self: center;
+    height: 30px;
+    width: 30px;
 }
 .icn-group{
     display: flex;
     flex-direction: row;
     margin-left: auto;
+    gap: 10px;
 }
 .card-group{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     gap: 15px;
 }
+input{
+    width: 80%;
+    height: 25px;
+}
+.btn-horizontal{
+grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+   display: grid;
+    align-items: center;
+}
+.section2 > div, .section3 > div {
+background-color: #f0f9ff;
+border-radius: 15px;
+padding: 15px;
+} 
